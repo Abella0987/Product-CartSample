@@ -1,0 +1,69 @@
+
+nav{
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(12, 6, 37, 0.582);
+    background-image: linear-gradient(180deg, rgba(0,0,0.0.7) 10%, transparent);
+    z-index: 1;
+}
+
+nav .nav-left{
+    cursor: pointer;
+}
+nav .search{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+nav .search input{
+    width: 500px;
+    padding: 6px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+}
+nav .search i{
+   font-size: 17px;
+   cursor: pointer;
+}
+header{
+  margin-top: 70px;
+  max-height: 100vh;
+  padding: 20px 6%;
+  position: relative;
+}
+header .filters{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .filters i{
+   cursor: pointer;
+}
+header .header-body-ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    list-style: none;
+}
+header .header-body-ul li{
+    padding: 20px;
+}
+.addtocart button{
+    background-color: rgba(31, 177, 31, 0.616);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.addtocart button:hover{
+    background-color:rgba(19, 94, 19, 0.76) ;
+}
