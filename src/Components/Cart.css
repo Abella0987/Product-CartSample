@@ -1,0 +1,20 @@
+.Cart-container{
+    position: relative;
+    background-color: rgba(118, 120, 121, 0.966);
+    width: 35%;
+    align-items: center;
+    list-style: none;
+}
+.Cart-container h2{
+    text-align: center;
+    padding-top: 5%;
+}
+.cart-body{
+    padding: 10%;
+}
+.cartItem{
+    padding-bottom: 12px;
+}
+.addbutton{
+    
+}
