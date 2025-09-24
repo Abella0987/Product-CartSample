@@ -10,11 +10,16 @@ const Header = () => {
   const [query, setQuery] = useState("");
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
+  const [showCart, setShowCart] = useState(true);
 
   function handleClick(e){
     e.preventDefault();
     setCartCount(prevCount => prevCount + 1);
-}
+   }
+
+  function toggle(){
+    setShowCart(prevShow => !prevShow);
+  } 
 
 
   return (
@@ -28,7 +33,7 @@ const Header = () => {
               <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div className="nav-left">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping" onClick={toggle}></i>
               <span>{cartCount}</span>
           </div>
       </nav>
@@ -51,7 +56,7 @@ const Header = () => {
               ))}
             </ul>
           </div>
-           <Cart />
+           {showCart && <Cart />}
         </div>
       </header>
       
